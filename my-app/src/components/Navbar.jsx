@@ -2,19 +2,19 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { Link } from "react-scroll";
 import { HiMenu, HiX } from "react-icons/hi";
-// import { useNavigate } from "react-router-dom";
+
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const [isOpen, setIsOpen] = useState(false); // State untuk toggle menu
+  const [isOpen, setIsOpen] = useState(false); 
 
-  // Stabilize the handleScroll function
+
   const handleScroll = useCallback(() => {
     if (window.scrollY > lastScrollY) {
-      setIsVisible(false); // Hide navbar
+      setIsVisible(false); 
     } else {
-      setIsVisible(true); // Show navbar
+      setIsVisible(true); 
     }
     setLastScrollY(window.scrollY);
   }, [lastScrollY]);
@@ -24,10 +24,9 @@ const Navbar = () => {
 
     const handleScroll = () => {
       if (window.scrollY > lastScrollY) {
-        // Scrolling down
+      
         setIsVisible(false);
       } else {
-        // Scrolling up
         setIsVisible(true);
       }
       lastScrollY = window.scrollY;
@@ -39,7 +38,6 @@ const Navbar = () => {
     };
   }, [handleScroll]);
 
-  // Toggle the menu open or close
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
@@ -57,14 +55,12 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Icon hamburger for mobile */}
           <div className="lg:hidden flex items-center">
             <button onClick={toggleMenu} className="text-white text-2xl">
               {isOpen ? <HiX /> : <HiMenu />}
             </button>
           </div>
 
-          {/* Navbar Links for large screens */}
           <nav className="hidden lg:flex flex-row items-center text-lg font-medium gap-8">
             <Link
               to="home"
@@ -112,8 +108,7 @@ const Navbar = () => {
             </Link>
           </nav>
         </div>
-
-        {/* Navbar Links for mobile */}
+        
         <div
           className={`lg:hidden flex flex-col items-center bg-backgroundColor ${
             isOpen ? "block" : "hidden"

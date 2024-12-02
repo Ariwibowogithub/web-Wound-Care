@@ -10,47 +10,47 @@ const testimonials = [
     feedback:
       "Saya sangat puas dengan layanan rawat luka di Fams Care. Luka saya sembuh lebih cepat dan lebih bersih, berkat perawatan modern yang mereka gunakan.",
     rating: 5,
-    img: "src/assets/img/testi1.jpg", // Ganti dengan link gambar sebenarnya
+    img: "src/assets/img/testi1.jpg", 
   },
   {
     name: "Joko Setiawan",
     feedback:
       "Terima kasih Fams Care! Perawatannya sangat profesional dan ramah. Luka saya yang semula sulit sembuh, kini sudah hampir pulih total.",
     rating: 4,
-    img: "src/assets/img/testi2.jpg", // Ganti dengan link gambar sebenarnya
+    img: "src/assets/img/testi2.jpg",
   },
   {
     name: "Ika Puspita",
     feedback:
       "Layanan rawat luka di Fams Care sangat efektif! Teknologi yang digunakan membuat luka saya cepat kering dan tidak ada infeksi. Sangat rekomended!",
     rating: 5,
-    img: "src/assets/img/testi3.jpg", // Ganti dengan link gambar sebenarnya
+    img: "src/assets/img/testi3.jpg", 
   },
   {
     name: " Sri Rejeki",
     feedback:
       "Saya merasa sangat diperhatikan di Fams Care. Perawatannya sangat teliti dan menggunakan metode modern, jadi saya merasa aman dan nyaman selama proses penyembuhan.",
     rating: 4,
-    img: "src/assets/img/testi4.jpg", // Ganti dengan link gambar sebenarnya
+    img: "src/assets/img/testi4.jpg", 
   },
   {
     name: "Doni Salmanan",
     feedback:
       "Fams Care memberikan solusi terbaik untuk luka saya. Dengan pendekatan modern dan tenaga medis yang berpengalaman, luka saya sembuh dengan baik tanpa komplikasi.",
     rating: 4,
-    img: "src/assets/img/testi5.jpg", // Ganti dengan link gambar sebenarnya
+    img: "src/assets/img/testi5.jpg", 
   },
   {
     name: "Joko Setiawan",
     feedback:
       "Setelah mencoba berbagai perawatan luka, akhirnya saya menemukan Fams Care. Proses penyembuhan lebih cepat dan luka saya terlihat lebih sehat.",
     rating: 5,
-    img: "src/assets/img/testi6.jpg", // Ganti dengan link gambar sebenarnya
+    img: "src/assets/img/testi6.jpg", 
   },
 ];
 
 const Home = () => {
-  const itemsPerPage = 3; // Jumlah item per halaman
+  const itemsPerPage = 3;
   const [currentPage, setCurrentPage] = useState(0);
 
   const totalPages = Math.ceil(testimonials.length / itemsPerPage);
@@ -76,9 +76,7 @@ const Home = () => {
     <div>
       <section className="pt-20">
         <div className="bg-white flex pb-17">
-          {/* Hero Section */}
           <div className="flex flex-col-reverse lg:flex-row items-center justify-between px-8 lg:px-32 py-16 lg:py-28">
-            {/* Text Content */}
             <div className="lg:w-1/2 space-y-6">
               <h1 className="text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
                 We Provide High Quality{" "}
@@ -101,16 +99,13 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Image and Stats Section */}
             <div className="relative lg:w-1/2 flex items-center justify-center">
-              {/* Main Image */}
               <img
                 src="src/assets/img/gbr1.png"
                 alt="Doctor"
                 className="w-full max-w-md object-cover rounded-lg"
               />
 
-              {/* Stat Badges */}
               <div className="absolute top-8 right-8 bg-blue-100 text-blue-600 px-4 py-2 rounded-lg text-sm shadow-md">
                 200+ Happy Customers
               </div>
@@ -125,15 +120,13 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Section How To get Sevice */}
       <section className="bg-blue-600 text-white py-16 pt-10">
         <div className="container mx-auto px-6 lg:px-32">
-          {/* Grid Layout */}
           <div
             className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
             style={{ marginTop: "var(--section-spacing, 2rem)" }}
           >
-            {/* Left Column: Heading */}
+
             <div>
               <h2 className="text-3xl font-bold mb-4">
                 KENAPA HARUS MEMILIH KAMI?
@@ -144,7 +137,7 @@ const Home = () => {
             </div>
 
             <div className="grid grid-cols-auto sm:grid-cols-3 gap-6">
-              {/* Step 1 */}
+      
               <div className="bg-white text-blue-600 p-6 rounded-lg shadow-lg flex flex-col items-center">
                 <div className="text-4xl mb-4">
                   <i className="fa-solid fa-user-tie"></i>
@@ -153,8 +146,6 @@ const Home = () => {
                   Profesional Medis
                 </h3>
               </div>
-
-              {/* Step 2 */}
               <div className="bg-white text-blue-600 p-6 rounded-lg shadow-lg flex flex-col items-center">
                 <div className="text-4xl mb-3">
                   <i className="fa-solid fa-certificate"></i>
@@ -164,7 +155,7 @@ const Home = () => {
                 </h3>
               </div>
 
-              {/* Step 3 */}
+     
               <div className="bg-white text-blue-600 p-6 rounded-lg shadow-lg flex flex-col items-center">
                 <div className="text-4xl mb-4">
                   <i className="fa-solid fa-house-medical"></i>
@@ -181,7 +172,6 @@ const Home = () => {
       <section>
         <div className="bg-gray-50 items-center justify-center">
           <div className="max-w-9xl w-full bg-white rounded-lg shadow-lg p-8 mt-10">
-            {/* Header Section */}
             <div className="text-center mb-12">
               <h1 className="text-4xl font-bold text-gray-800">
                 Kami <span className="text-yellow-500">Berkomitmen</span>{" "}
@@ -196,9 +186,7 @@ const Home = () => {
               </p>
             </div>
 
-            {/* Main Content Section */}
             <div className="flex flex-col md:flex-row items-center">
-              {/* Left Section - Doctor Illustration */}
               <div className="md:w-1/2 flex justify-center mb-8 md:mb-0">
                 <img
                   src="src/assets/img/gbr2.png"
@@ -207,7 +195,6 @@ const Home = () => {
                 />
               </div>
 
-              {/* Right Section - Services List */}
               <div className="md:w-1/2">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-6">
                   KAMI MELAYANI SEGALA JENIS PERAWATAN LUKA
@@ -370,7 +357,6 @@ const Home = () => {
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            {/* Image 1 */}
             <div className="group relative overflow-hidden rounded-lg shadow-lg transition-transform transform hover:scale-105">
               <img
                 src="src/assets/img/glr1.jpg"
@@ -384,7 +370,6 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Image 2 */}
             <div className="group relative overflow-hidden rounded-lg shadow-lg transition-transform transform hover:scale-105">
               <img
                 src="src/assets/img/glr2.jpg"
@@ -398,7 +383,6 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Image 3 */}
             <div className="group relative overflow-hidden rounded-lg shadow-lg transition-transform transform hover:scale-105">
               <img
                 src="src/assets/img/glr3.jpg"
@@ -412,7 +396,6 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Image 4 */}
             <div className="group relative overflow-hidden rounded-lg shadow-lg transition-transform transform hover:scale-105">
               <img
                 src="src/assets/img/glr4.jpg"
@@ -429,7 +412,6 @@ const Home = () => {
         </div>
         <div className="container mx-auto px-4 text-center p-5">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            {/* Image 1 */}
             <div className="group relative overflow-hidden rounded-lg shadow-lg transition-transform transform hover:scale-105">
               <img
                 src="src/assets/img/glr1.jpg"
@@ -443,7 +425,6 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Image 2 */}
             <div className="group relative overflow-hidden rounded-lg shadow-lg transition-transform transform hover:scale-105">
               <img
                 src="src/assets/img/glr2.jpg"
@@ -457,7 +438,6 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Image 3 */}
             <div className="group relative overflow-hidden rounded-lg shadow-lg transition-transform transform hover:scale-105">
               <img
                 src="src/assets/img/glr3.jpg"
@@ -471,7 +451,6 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Image 4 */}
             <div className="group relative overflow-hidden rounded-lg shadow-lg transition-transform transform hover:scale-105">
               <img
                 src="src/assets/img/glr4.jpg"
