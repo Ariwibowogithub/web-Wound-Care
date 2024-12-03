@@ -101,12 +101,12 @@ const Home = () => {
 
             <div className="relative lg:w-1/2 flex items-center justify-center">
               <img
-                src="src/assets/img/gbr1.png"
+                src="src/assets/img/gbr_hero3.png"
                 alt="Doctor"
                 className="w-full max-w-md object-cover rounded-lg"
               />
 
-              <div className="absolute top-8 right-8 bg-blue-100 text-blue-600 px-4 py-2 rounded-lg text-sm shadow-md">
+              <div className="absolute mr-11  top-8 right-3 bg-blue-100 text-blue-600 px-4 py-2 rounded-lg text-sm shadow-md">
                 200+ Happy Customers
               </div>
               <div className="absolute bottom-8 right-8 bg-yellow-100 text-yellow-600 px-4 py-2 rounded-lg text-sm shadow-md">
@@ -189,14 +189,14 @@ const Home = () => {
             <div className="flex flex-col md:flex-row items-center">
               <div className="md:w-1/2 flex justify-center mb-8 md:mb-0">
                 <img
-                  src="src/assets/img/gbr2.png"
+                  src="src/assets/img/gbr_hero1.png"
                   alt="Doctor Illustration"
-                  className="w-64 h-64"
+                  className="w-80 h-80"
                 />
               </div>
 
               <div className="md:w-1/2">
-                <h2 className="text-2xl font-semibold text-gray-800 mb-6">
+                <h2 className="text-2xl font-bold text-gray-800 mb-6">
                   KAMI MELAYANI SEGALA JENIS PERAWATAN LUKA
                 </h2>
                 <ul className="grid grid-cols-2 gap-4 text-gray-700 text-lg">
