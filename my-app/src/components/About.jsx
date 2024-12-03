@@ -52,10 +52,19 @@ const About = () => {
             Layanan Kesehatan Untuk Masyarakat Dengan Mengutamakan Pelayanan
             Yang Profesional, Modern dan Canggih.
           </p>
+          <div className="flex justify-center mt-10 font-bold">
+            <button className="px-6 py-3 text-white bg-yellow-500 rounded-lg shadow-md text-lg 
+                              hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 
+                              focus:ring-opacity-75 
+                              sm:px-8 sm:py-4 md:px-10 md:py-5 lg:px-12 lg:py-6">
+              Informasi Selengkapnya..
+            </button>
+          </div>
         </div>
 </section>
 
-<section>    <div className="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8">
+<section>
+  <div className="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-screen-xl mx-auto text-center">
         <h2 className="text-4xl font-semibold text-gray-800">KEUNGGULAN KLINIK KESEHATAN FAMS CARE</h2>
         <p className="mt-4 text-lg text-gray-600">Kami berkomitmen untuk memberikan yang pelayanan terbaik dengan nilai-nilai berikut yang kami pegang teguh dalam setiap langkah kami.</p>
